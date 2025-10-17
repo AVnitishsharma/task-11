@@ -6,6 +6,10 @@
   font-family: paper;
   src: url(./Editorial\ New-Ultralight.otf);
 }
+@font-face {
+  font-family: logo;
+  src: url(./Flagfies.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,82 +20,352 @@ html, body {
   width: 100%;
   height: 100%;
   font-size: clamp(0.5rem, 1vw, 1rem);
+  background-color: #111;
+  color: rgb(255, 255, 255);
 }
 
 main {
   height: 100%;
-  background-color: black;
-  color: white;
 }
-main section {
-  width: 100%;
-  height: 100%;
+main nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 0 2rem;
 }
-main section img {
+main nav h1 {
+  font-size: 3vw;
+  font-family: logo;
+  font-weight: 100;
+}
+main nav div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+main nav div a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.0392156863);
+  transition: all 0.2s ease-in-out;
+}
+main nav div a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+main nav div a:nth-child(5) {
+  background-color: #ffffff;
+  color: black;
+}
+main nav div a:nth-child(5):hover {
+  background-color: rgba(255, 255, 255, 0.0392156863);
+  color: white;
+  scale: 1.1;
+}
+main section.first {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+}
+main section.first img {
+  aspect-ratio: 1/1;
   width: 50%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1rem;
 }
-main section .text {
-  height: 100%;
+main section.first .text {
   width: 50%;
   padding: 2rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #222;
+  background-color: rgba(255, 255, 255, 0.0588235294);
 }
-main section .text h3 {
+main section.first .text h3 {
   font-size: 4rem;
   font-family: canopee;
   font-weight: 200;
 }
-main section .text .info {
+main section.first .text .info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1vw;
 }
-main section .text .info h1 {
-  font-size: 3rem;
+main section.first .text .info h1 {
+  font-size: clamp(20px, 3vw, 40px);
   font-family: paper;
   font-weight: 400;
   line-height: 1;
 }
-main section .text .info p {
+main section.first .text .info p {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   opacity: 0.4;
 }
-main section .text .info button {
+main section.first .text .info button {
   width: 10rem;
   height: 3rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   border: 1px solid white;
   background-color: transparent;
   color: white;
+  font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   cursor: pointer;
 }
+main section.second {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+}
+main section.second .top {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main section.second .top p {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  opacity: 0.4;
+}
+main section.second .top h3 {
+  font-size: 3rem;
+  font-family: canopee;
+  font-weight: 200;
+}
+main section.second .bottom {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main section.second .bottom p {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  opacity: 0.4;
+}
+main section.second .bottom h3 {
+  font-size: 3rem;
+  font-family: canopee;
+  font-weight: 200;
+}
+main section.third {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+}
+main section.third img {
+  aspect-ratio: 1/1;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main section.third .text {
+  width: 50%;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.0588235294);
+}
+main section.third .text h3 {
+  font-size: 4rem;
+  font-family: canopee;
+  font-weight: 200;
+}
+main section.third .text h3 span {
+  font-family: paper;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+main section.third .text .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+main section.third .text .info h1 {
+  font-size: clamp(20px, 5vw, 50px);
+  font-family: paper;
+  font-weight: 400;
+  line-height: 1;
+}
+main section.third .text .info p {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  opacity: 0.4;
+}
+main section.fourth {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+main section.fourth img {
+  aspect-ratio: 1/1;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main section.fourth .text {
+  width: 50%;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.0588235294);
+}
+main section.fourth .text h3 {
+  font-size: 4rem;
+  font-family: canopee;
+  font-weight: 200;
+}
+main section.fourth .text h3 span {
+  font-family: paper;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+main section.fourth .text .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+main section.fourth .text .info h1 {
+  font-size: clamp(20px, 5vw, 50px);
+  font-family: paper;
+  font-weight: 400;
+  line-height: 1;
+}
+main section.fourth .text .info p {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  opacity: 0.4;
+}
+main section.fifth {
+  padding: 1rem;
+  gap: 1rem;
+}
+main section.fifth .members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+main section.fifth .members .first, main section.fifth .members .second, main section.fifth .members .third, main section.fifth .members .fourth, main section.fifth .members .fifth {
+  width: 20%;
+  aspect-ratio: 1/2;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+main section.fifth .members .first info, main section.fifth .members .second info, main section.fifth .members .third info, main section.fifth .members .fourth info, main section.fifth .members .fifth info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main section.fifth .members .first info h1, main section.fifth .members .second info h1, main section.fifth .members .third info h1, main section.fifth .members .fourth info h1, main section.fifth .members .fifth info h1 {
+  font-size: clamp(20px, 5vw, 50px);
+  font-family: paper;
+  font-weight: 400;
+  line-height: 1;
+}
+main section.fifth .members .first {
+  background-image: url("https://i.pinimg.com/736x/d5/f0/fc/d5f0fc5d436e0b6cfc04067a9b27379a.jpg");
+}
+main section.fifth .members .second {
+  background-image: url("https://i.pinimg.com/736x/0c/9b/8a/0c9b8a4f4f4d4b7c4b7c4b7c4b7c4b7c.jpg");
+}
+main section.fifth .members .third {
+  background-image: url("https://i.pinimg.com/736x/0c/9b/8a/0c9b8a4f4f4d4b7c4b7c4b7c4b7c4b7c.jpg");
+}
+main section.fifth .members .fourth {
+  background-image: url("https://i.pinimg.com/736x/0c/9b/8a/0c9b8a4f4f4d4b7c4b7c4b7c4b7c4b7c.jpg");
+}
+main section.fifth .members .fifth {
+  background-image: url("https://i.pinimg.com/736x/0c/9b/8a/0c9b8a4f4f4d4b7c4b7c4b7c4b7c4b7c.jpg");
+}
 
-@media (max-width: 800px) {
-  main section {
+@media (max-width: 600px) {
+  main section.first {
     flex-direction: column;
+    height: 100%;
   }
-  main section img {
+  main section.first img {
     height: 50%;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
   }
-  main section .text {
+  main section.first .text {
+    height: 50%;
+    width: 100%;
+  }
+  main section.second {
+    flex-direction: column;
+  }
+  main section.second .top {
+    width: 100%;
+  }
+  main section.second .bottom {
+    width: 100%;
+  }
+  main section.third {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  main section.third img {
+    height: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  main section.third .text {
+    height: 50%;
+    width: 100%;
+  }
+  main section.fourth {
+    flex-direction: column;
+    height: 100%;
+  }
+  main section.fourth img {
+    height: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  main section.fourth .text {
     height: 50%;
     width: 100%;
   }
