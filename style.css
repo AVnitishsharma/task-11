@@ -62,8 +62,9 @@ main nav div a:hover {
   color: black;
 }
 main nav div a:nth-child(5) {
-  background-color: #ffffff;
+  background-color: yellow;
   color: black;
+  font-weight: 600;
 }
 main nav div a:nth-child(5):hover {
   background-color: rgba(255, 255, 255, 0.0392156863);
@@ -270,12 +271,28 @@ main section.fifth {
   padding: 1rem;
   gap: 1rem;
 }
+main section.fifth .text {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.0392156863);
+}
+main section.fifth .text h3 {
+  font-size: 4rem;
+  font-family: canopee;
+  font-weight: 200;
+}
+main section.fifth .text h3 span {
+  font-family: paper;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
 main section.fifth .members {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  padding: 1rem;
 }
 main section.fifth .members .first, main section.fifth .members .second, main section.fifth .members .third, main section.fifth .members .fourth, main section.fifth .members .fifth {
   width: 20%;
@@ -289,35 +306,140 @@ main section.fifth .members .first, main section.fifth .members .second, main se
   justify-content: end;
   align-items: center;
 }
-main section.fifth .members .first info, main section.fifth .members .second info, main section.fifth .members .third info, main section.fifth .members .fourth info, main section.fifth .members .fifth info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+main section.fifth .members .first .info, main section.fifth .members .second .info, main section.fifth .members .third .info, main section.fifth .members .fourth .info, main section.fifth .members .fifth .info {
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  margin: 0.5em;
+  padding: 0.5em;
 }
-main section.fifth .members .first info h1, main section.fifth .members .second info h1, main section.fifth .members .third info h1, main section.fifth .members .fourth info h1, main section.fifth .members .fifth info h1 {
-  font-size: clamp(20px, 5vw, 50px);
+main section.fifth .members .first .info h1, main section.fifth .members .second .info h1, main section.fifth .members .third .info h1, main section.fifth .members .fourth .info h1, main section.fifth .members .fifth .info h1 {
+  font-size: 1.5rem;
   font-family: paper;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1;
+  color: white;
 }
 main section.fifth .members .first {
   background-image: url("https://i.pinimg.com/736x/d5/f0/fc/d5f0fc5d436e0b6cfc04067a9b27379a.jpg");
 }
 main section.fifth .members .second {
-  background-image: url("https://i.pinimg.com/736x/0c/9b/8a/0c9b8a4f4f4d4b7c4b7c4b7c4b7c4b7c.jpg");
+  background-image: url("https://i.pinimg.com/736x/94/15/20/9415206e4cd807360da07688051d67be.jpg");
 }
 main section.fifth .members .third {
-  background-image: url("https://i.pinimg.com/736x/0c/9b/8a/0c9b8a4f4f4d4b7c4b7c4b7c4b7c4b7c.jpg");
+  background-image: url("https://i.pinimg.com/736x/2e/d0/18/2ed018fbeb871005fbbdc27cf402b4af.jpg");
 }
 main section.fifth .members .fourth {
-  background-image: url("https://i.pinimg.com/736x/0c/9b/8a/0c9b8a4f4f4d4b7c4b7c4b7c4b7c4b7c.jpg");
+  background-image: url("https://i.pinimg.com/736x/e7/ee/30/e7ee3056cb40c208e2842a4bc32fd2d0.jpg");
 }
 main section.fifth .members .fifth {
-  background-image: url("https://i.pinimg.com/736x/0c/9b/8a/0c9b8a4f4f4d4b7c4b7c4b7c4b7c4b7c.jpg");
+  background-image: url("https://i.pinimg.com/736x/05/9e/1d/059e1d91961b41a6d27710cf644abe55.jpg");
+}
+main section.sixth {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+}
+main section.sixth .join, main section.sixth .contact {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.0392156863);
+  position: relative;
+}
+main section.sixth .join h4, main section.sixth .contact h4 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  opacity: 0.4;
+  margin-bottom: 1rem;
+}
+main section.sixth .join h1, main section.sixth .contact h1 {
+  font-size: clamp(20px, 3vw, 40px);
+  font-family: paper;
+  font-weight: 200;
+  margin-bottom: 3rem;
+}
+main section.sixth .join button, main section.sixth .contact button {
+  border-radius: 1rem;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.0392156863);
+  color: white;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  opacity: 0.4;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+main section.sixth .join button:hover, main section.sixth .contact button:hover {
+  background-color: #ffffff;
+  color: black;
+  font-weight: 600;
+}
+main footer {
+  padding: 1rem 3rem;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.0392156863);
+}
+main footer > h1 {
+  font-size: 3rem;
+  font-family: logo;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+main footer .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+main footer .text div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main footer .text div h1 {
+  font-size: 2rem;
+  font-family: paper;
+  font-weight: 200;
+}
+main footer .text div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main footer .text div a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+main footer .text div a:hover {
+  background-color: yellow;
+  color: black;
+  font-weight: 600;
+}
+main footer > h2 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  opacity: 0.4;
+  margin-top: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   main section.first {
     flex-direction: column;
     height: 100%;
@@ -367,6 +489,33 @@ main section.fifth .members .fifth {
   }
   main section.fourth .text {
     height: 50%;
+    width: 100%;
+  }
+  main section.fifth .members {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main section.fifth .members .first, main section.fifth .members .second, main section.fifth .members .third, main section.fifth .members .fourth, main section.fifth .members .fifth {
+    width: 48%;
+    aspect-ratio: 1/1;
+    background-position: top;
+  }
+  main section.fifth .members .first .info, main section.fifth .members .second .info, main section.fifth .members .third .info, main section.fifth .members .fourth .info, main section.fifth .members .fifth .info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  main section.fifth .members .first .info h1, main section.fifth .members .second .info h1, main section.fifth .members .third .info h1, main section.fifth .members .fourth .info h1, main section.fifth .members .fifth .info h1 {
+    font-size: 2rem;
+    color: white;
+  }
+  main section.sixth {
+    flex-direction: column;
+  }
+  main section.sixth .join, main section.sixth .contact {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
